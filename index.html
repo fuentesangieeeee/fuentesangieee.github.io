@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professional Makeup Artists</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Stripe.js -->
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Maquilladores Profesionales a Domicilio</h1>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <h2>Realza tu Belleza con Expertos</h2>
+        <p>Reserva con anticipación y luce espectacular</p>
+        <img src="img/maquillaje-ojos-grandes-1280x720x80xX.jpg" alt="Maquilladora profesional">
+    
+        <!-- Contenedor para mover el botón hacia abajo -->
+        <div class="button-container">
+            <button class="btn">Reservar Cita</button>
+        </div>
+    </section>
+    
+
+    <!-- Servicios -->
+    <section class="service-list">
+        <div class="service">
+            <img src="imagenes/WhatsApp Image 2025-03-23 at 14.42.57 (1).jpeg" alt="Paquete Básico">
+            <h3>Paquete Básico</h3>
+            <p>Maquillaje natural para cualquier ocasión.</p>
+        </div>
+        <div class="service">
+            <img src="img/maquillaje fotos.jpeg" alt="Paquete Glamour">
+            <h3>Paquete Glamour</h3>
+            <p>Maquillaje elegante para eventos especiales.</p>
+        </div>
+        <div class="service">
+            <img src="img/WhatsApp Image 2025-03-23 at 14.42.55 (1).jpeg" alt="Paquete Completo">
+            <h3>Paquete Completo</h3>
+            <p>Maquillaje de lujo con asesoría personalizada.</p>
+        </div>
+    </section>
+
+    <!-- Pago -->
+    <section class="payment">
+        <h2>Realiza tu pago por adelantado</h2>
+        <p>Confirma tu reserva.</p>
+
+        <!-- Formulario de pago -->
+        <form id="payment-form">
+            <div id="card-element"></div>
+            <button id="submit">Pagar</button>
+            <div id="error-message"></div>
+        </form>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact">
+        <h2>Contacta con Nosotros</h2>
+        <p>¡Estamos disponibles en San Pedro Sula y otros departamentos de Honduras! Reserva con al menos una semana de anticipación.</p>
+        
+        <!-- Formulario de contacto -->
+        <form action="#" method="post">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Número de contacto -->
+        <p>También puedes llamarnos al: <strong>+504 1234 5678</strong></p>
+
+<div class="social-icons">
+    <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
+    <a href="#"><img src="img/logo-ig-logo-instagram-ini-ada-varias-dan-transparan-33.png" alt="WhatsApp" class="social-icon"></a>
+</div>
+
+    <!-- Chat en vivo -->
+    <div id="chat-box">
+        <div class="chat-header">
+            <h4>Chat en vivo</h4>
+            <button id="close-chat" onclick="toggleChat()">Cerrar</button>
+        </div>
+        <div class="chat-content">
+            <p>¡Hola! ¿En qué podemos ayudarte?</p>
+        </div>
+    </div>
+
+    <!-- Botón de chat -->
+    <button id="chat-btn" onclick="toggleChat()">💬</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Professional Makeup Artists | Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Script para abrir/cerrar chat -->
+    <script src="script.js"></script>
+
+</body>
+</html>
