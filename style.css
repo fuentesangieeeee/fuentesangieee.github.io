@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: black;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff007f;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.service {
+    text-align: center;
+    width: 30%;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.payment {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.payment button {
+    padding: 10px 20px;
+    background-color: #ff007f;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.contact {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #ff007f;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+
+.social-icon {
+    width: 30px;  /* Tamaño del icono */
+    height: 30px; /* Mantener la proporción */
+    transition: transform 0.3s ease; /* Animación para efectos al pasar el ratón */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Aumenta un poco el tamaño al pasar el ratón */
+}
+
+#chat-box {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff007f;
+    color: white;
+    padding: 5px;
+}
+
+#chat-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ff007f;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
